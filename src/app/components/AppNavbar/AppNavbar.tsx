@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 type Props = {
@@ -7,9 +8,9 @@ type Props = {
 const AppNavbar: React.FC<Props> = ({ title }) => {
   return (
     <nav className='flex justify-between items-center w-[100%]  mx-auto py-3 px-6 border-2 border border-b-slate-200'>
-      <div className='text-xl font-extrabold'>
+      <div className='text-xl font-extrabold italic'>
         <span>T</span>
-        <span className='text-red-700 '>ransvision N</span>
+        <span className='text-red-500 '>ransvision N</span>
         <span>etwork</span>
       </div>
       <div
@@ -22,7 +23,7 @@ const AppNavbar: React.FC<Props> = ({ title }) => {
             <a className="hover:text-gray-500" href="#">Qui somme nous ?</a>
           </li>
           <li>
-            <a className="hover:text-gray-500" href="#">Player</a>
+          <Link href="/pages/ChannelsHub">Chaines</Link>
           </li>
           <li>
             <a className="hover:text-gray-500" href="#">Pricing</a>

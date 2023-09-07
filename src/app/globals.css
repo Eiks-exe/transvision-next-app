@@ -16,4 +16,13 @@
   }
 }
 
+.home-section-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../ressources/kelly-sikkema-MsddXGPfQlA-unsplash.jpg");
+}
 
+.home-section-1-title{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  
+}

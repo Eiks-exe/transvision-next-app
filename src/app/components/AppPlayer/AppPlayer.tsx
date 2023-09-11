@@ -6,7 +6,9 @@ import 'videojs-contrib-hls'
 import React from 'react'
 import Player from 'video.js/dist/types/player';
 
-type Props = {}
+type Props = {
+  className?: string 
+}
 
 const AppPlayer = (props: Props) => {
     let player : Player
@@ -14,8 +16,10 @@ const AppPlayer = (props: Props) => {
     const videoOptions = {
         autoplay: true,
         controls: true,
+        width:"920",
+        height:"480",
         sources: [{
-            src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
+            src: 'https://3abn-live.akamaized.net/hls/live/2010544/International/master.m3u8',
             type: 'application/x-mpegURL'
         }]
     };
@@ -36,8 +40,8 @@ const AppPlayer = (props: Props) => {
 
     return (
         <div data-vjs-player>
-        <video ref={videoRef} className="video-js" />
-      </div>
+        <video ref={videoRef} className={`video-js ${props.className}`} />
+        </div>
     )
 }
 

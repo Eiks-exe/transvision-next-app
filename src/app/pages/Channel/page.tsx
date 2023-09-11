@@ -6,8 +6,8 @@ type Props = {}
 
 const Page = (props: Props) => {
     return (
-        <div className='mx-auto grid max-w-screen-xxl px-8 py-8 text-center lg:py-16 h-screen'>
-           <AppPlayer/>
+        <div className='mx-auto grid max-w-screen-xxl px-[10%] py-8 text-center lg:py-16 h-screen'>
+           <AppPlayer className='rounded-lg'/>
         </div>
     )
 }

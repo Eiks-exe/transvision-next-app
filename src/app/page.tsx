@@ -1,28 +1,59 @@
 import Image from 'next/image'
-import AppLayout from './components/AppLayout/AppLayout'
-import { url } from 'inspector'
-import { ChakraProvider } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Stack,
+  Text,
+  VStack,
+  useBreakpointValue
+} from '@chakra-ui/react'
 import AppNavbar from './components/AppNavbar/AppNavbar'
+import AppHomeHero from './components/AppHomeHero/AppHomeHero'
 
 
 
 export default function Home() {
   return (
     <>
-      <AppNavbar title={"transvision network"}/>
-    <div
-      className=' mx-auto grid max-w-screen-xxl px-4 py-8 text-center lg:py-16 home-section-1 h-screen'
-    //@ts-ignore
+    <AppNavbar title='transvision network'/>
+    <AppHomeHero/>
+    <Flex
+      width={"full"}
+      h={"100vh"}
     >
-      
-      <h1 className="text-center text-6xl font-bold italic text-white height-96 home-section-1-title">
-        <span>Le </span>
-        <span className='text-red-500'>Réseau </span>
-        <span>qui </span>
-        <span className='text-red-500'>Transforme </span>
-        <span>votre vie  </span>
-      </h1>
-    </div>
+      <HStack
+        spacing={10}
+      >
+        <Box
+         bg={"gray.700"}
+         width={"50%"} 
+         h={"full"}  
+        >
+         
+        </Box>
+        <Box
+          width={"50%"}    
+        >
+          <Text>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident placeat minus eius non autem molestias quibusdam odit reiciendis sequi! Tenetur voluptatem, consectetur quisquam repudiandae quae ducimus quidem eius quo nesciunt?
+          </Text>
+        </Box>
+      </HStack>
+    </Flex>
+    <Flex
+      width={"full"}
+      h={"100vh"}
+    >
+      <VStack
+        spacing={10}
+      >
+          <Text fontSize={"6xl"}>
+           Nos Eglise  
+          </Text>
+      </VStack>
+    </Flex>
     </>
   )
 }

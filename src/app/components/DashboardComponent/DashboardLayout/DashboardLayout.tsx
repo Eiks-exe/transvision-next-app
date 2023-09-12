@@ -27,7 +27,6 @@ const  DashboardLayout:  React.FC<Props> = ({ children }) => {
         justifyContent="space-between"
         transition="ease-in-out .2s"
         borderRadius="3xl"
-        
       >
         <DashboardSideBar collapse= { collapse }/>
       </Flex>

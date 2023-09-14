@@ -1,25 +1,31 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import React from 'react'
+import { IChannel } from '@/interfaces/channel'
 
-interface IChannel {
-    id: number
-    title:string
-}
+import {Card, CardBody, Image, Text } from '@chakra-ui/react'
 
 type Props = {
-    key: number,
-    item: IChannel,
+  key: number,
+  item: IChannel,
 }
 
 
-const AppChannelCard = (props: Props) => {
+const AppChannelCard = ({item}: Props) => {
   const router = useRouter()
   return (
-    <div
-      className='p-20 bg-fuchsia-500 shadow-lg rounded-lg w-[50%]'
-      onClick={()=>{router.push('Channel')}}
-    >{props.item.title}</div>
+    <Card
+      w={"332px"}
+      h={"187px"}
+      borderRadius={"xl"}
+    >
+     <Image 
+          src={item.thumbnailSrc}
+          w={"full"}
+          h={"full"}  
+          borderRadius={"xl"}
+        />  
+    </Card>
   )
 }
 

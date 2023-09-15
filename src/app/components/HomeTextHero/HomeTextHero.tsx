@@ -4,9 +4,10 @@ import React from 'react'
 type Props = {
     reversed?: boolean
     imgSrc ?: string 
+    text: string 
 }
-
-const HomeTextHero = ({ reversed = false, imgSrc }: Props) => {
+const lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sed laudantium. Deserunt laudantium saepe odit velit. Repudiandae aut, ut placeat consequatur quisquam veritatis odio vitae beatae, dolor assumenda, maiores sapiente?"
+const HomeTextHero = ({ reversed = false, imgSrc, text= lorem }: Props) => {
     return (
         <Flex
             w={"full"}
@@ -29,7 +30,7 @@ const HomeTextHero = ({ reversed = false, imgSrc }: Props) => {
                         width={"50%"}
                     >
                         <Text>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident placeat minus eius non autem molestias quibusdam odit reiciendis sequi! Tenetur voluptatem, consectetur quisquam repudiandae quae ducimus quidem eius quo nesciunt?
+                            {text}
                         </Text>
                     </Box>
                 </HStack>

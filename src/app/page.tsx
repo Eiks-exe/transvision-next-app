@@ -15,15 +15,15 @@ import HomeTextHero from './components/HomeTextHero/HomeTextHero'
 import AppGrid from './components/AppGrid'
 import { channelsMock } from '@/utils/channelsMock'
 
-
+const text1 = "PFNTE offre une solution de diffusion en direct pour les églises et ses partenaires qui partage l'orientation et l'éthique religieuse selon les ensemble bibliques.";
 
 export default function Home() {
   return (
     <>
     <AppNavbar title='transvision network'/>
     <AppHomeHero/>
-    <HomeTextHero/>
-    <HomeTextHero reversed/>
+    <HomeTextHero text={text1}/>
+    <HomeTextHero reversed text=",  "/>
     <Flex
       width={"full"}
       h={"100vh"}

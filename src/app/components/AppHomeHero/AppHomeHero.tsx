@@ -1,5 +1,5 @@
 'use client'
-import { Flex, VStack, useBreakpointValue, Stack, Button, Text } from '@chakra-ui/react'
+import { Flex, VStack, useBreakpointValue, Stack, Button, Text, Heading } from '@chakra-ui/react'
 import React from 'react'
 
 type Props = {}
@@ -18,15 +18,19 @@ const AppHomeHero = (props: Props) => {
       w={'full'}
       justify={'center'}
       px={useBreakpointValue({ base: 4, md: 8 })}
-      bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
+      bgGradient={'linear(to-r, blackAlpha.900, transparent)'}>
       <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-        <Text
-          color={'white'}
-          fontWeight={700}
-          lineHeight={1.2}
-          fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-        </Text>
+      <Heading
+            fontWeight={600}
+            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'110%'}
+            color="white"
+      >
+            Plate-Forme Numérique Transvision église <br />
+            <Text as={'span'} color={'red.500'} fontSize={"3xl"}>
+              Une offre dédié au streamin et à la VOD des église
+            </Text>
+          </Heading>
         <Stack direction={'row'}>
           <Button
             bg={'blue.400'}

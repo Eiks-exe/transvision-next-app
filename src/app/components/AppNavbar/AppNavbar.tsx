@@ -11,7 +11,7 @@ const AppNavbar: React.FC<Props> = ({ title }) => {
       <div className='text-xl font-extrabold italic'>
         <span>T</span>
         <span className='text-red-500 '>ransvision N</span>
-        <span>etwork</span>
+        <span>etwork / PFNTE</span>
       </div>
       <div
         className="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">

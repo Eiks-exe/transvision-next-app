@@ -15,7 +15,7 @@ import HomeTextHero from './components/HomeTextHero/HomeTextHero'
 import AppGrid from './components/AppGrid'
 import { channelsMock } from '@/utils/channelsMock'
 
-const text1 = "PFNTE offre une solution de diffusion en direct pour les églises et ses partenaires qui partage l'orientation et l'éthique religieuse selon les ensemble bibliques.";
+const text1 = "PFNTE offre une solution de diffusion en direct pour les églises et ses partenaires qui partage l'orientation et l'éthique religieuse selon les écritures bibliques.";
 
 export default function Home() {
   return (

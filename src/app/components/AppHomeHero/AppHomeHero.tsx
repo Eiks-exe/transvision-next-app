@@ -10,7 +10,7 @@ const AppHomeHero = (props: Props) => {
     w={'full'}
     h={'100vh'}
     backgroundImage={
-      'url(https://images.unsplash.com/photo-1569503169334-e72c72ea5ed1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80)'
+      'url()'
     }
     backgroundSize={'cover'}
     backgroundPosition={'center center'}>

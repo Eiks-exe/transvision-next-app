@@ -16,7 +16,7 @@ const AppGrid = (props: Props) => {
       overflowY={"scroll"} 
     >
         {props.data?.filter((item: IChannel) => item.name.toLowerCase()).map((item: IChannel) => (
-          <AppChannelCard key={item.id} item={item} />
+          <AppChannelCard key={item.id} item={item} link={true} />
         ))}
     </Grid>
   )

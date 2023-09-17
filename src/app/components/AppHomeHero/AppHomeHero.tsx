@@ -19,19 +19,23 @@ const AppHomeHero = (props: Props) => {
       justify={'center'}
       px={useBreakpointValue({ base: 4, md: 8 })}
       bgGradient={'linear(to-r, blackAlpha.900, transparent)'}>
-      <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+      <Stack maxW={'2xl'} align={'center'} spacing={6}>
       <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
             color="white"
+            textAlign={"center"}
       >
             Plate-Forme Numérique Transvision église <br />
             <Text as={'span'} color={'red.500'} fontSize={"3xl"}>
               Une offre dédié au streamin et à la VOD des église
             </Text>
           </Heading>
-        <Stack direction={'row'}>
+        <Stack 
+          direction={'row'} 
+          justifyContent={"center"}
+        >
           <Button
             bg={'blue.400'}
             rounded={'full'}

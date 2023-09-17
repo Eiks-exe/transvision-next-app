@@ -8,16 +8,18 @@ import {Card, CardBody, Image, Text } from '@chakra-ui/react'
 type Props = {
   key: number,
   item: IChannel,
+  link?: boolean
 }
 
 
-const AppChannelCard = ({item}: Props) => {
+const AppChannelCard = ({item, link}: Props) => {
   const router = useRouter()
   return (
     <Card
       w={"332px"}
       h={"187px"}
       borderRadius={"xl"}
+      onClick={link ? ()=>{router.push(`/pages/Channel/${item.id}`)}: (e)=>{e.preventDefault()}}
     >
      <Image 
           src={item.thumbnailSrc}

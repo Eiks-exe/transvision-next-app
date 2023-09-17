@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Text } from '@chakra-ui/react'
+import { Box, Flex, HStack, Image, Text, space } from '@chakra-ui/react'
 import React from 'react'
 
 type Props = {
@@ -13,23 +13,34 @@ const HomeTextHero = ({ reversed = false, imgSrc, text= lorem }: Props) => {
             w={"full"}
             h={"100vh"}
         >
-            <HStack>
+            <HStack
+                w={"100%"}
+            >
                 <HStack
                     spacing={10}
+                    padding={10}
                     flexDirection={reversed ? "row-reverse" : "row"}
                     h={"full"}
+                    w={"100%"} 
                 >
                     <Box
-                        bg={"gray.700"}
+                        display={"flex"}
                         width={"50%"}
                         h={"full"}
+                        alignItems={"center"}
+                        
                     >
-                       
+                      <Image  src={imgSrc} borderRadius={"xl"} alt="heroimg"/> 
                     </Box>
                     <Box
                         width={"50%"}
+                        h={"full"}
                     >
-                        <Text>
+                        <Text
+                            marginTop={"16%"}
+                            fontSize={"2xl"}
+                            fontStyle={"italic"}
+                        >
                             {text}
                         </Text>
                     </Box>

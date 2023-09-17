@@ -1,13 +1,14 @@
 import AppChannelCard from '@/app/components/AppChannelCard'
 import React from 'react'
-import AppGrid from '../../components/AppGrid/'
+import AppGrid from '@/app/components/AppGrid/'
 import AppPlayer from '@/app/components/AppPlayer/AppPlayer'
+import { channelsMock } from '@/utils/channelsMock'
 type Props = {}
 
 const Page = (props: Props) => {
     return (
-        <div className='mx-auto grid max-w-screen-xxl px-[10%] py-8 text-center lg:py-16 h-screen'>
-           <AppPlayer className='rounded-lg'/>
+        <div className='mx-auto grid max-w-screen-xxl px-8 py-8 text-center lg:py-16'>
+            <AppGrid data={channelsMock}></AppGrid >
         </div>
     )
 }

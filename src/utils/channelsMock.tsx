@@ -94,7 +94,7 @@ export const channelsMock: IChannel[] = [
     },
     {
         id: 8,
-        name: "vison espoir",
+        name: "elim",
         owner: {
             name: "Owner Name 8",
             adress: "Owner Address 8",
@@ -102,7 +102,7 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "555-666-7777",
             intracomNumber: "ICN505"
         },
-        thumbnailSrc: "/Logos/vison_espoir_thumbnail.jpg",
+        thumbnailSrc: "/Logos/elim.jpg",
         LiveSrc: "vison_espoir_live_stream_url"
     },
     {
@@ -154,12 +154,12 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "999-000-1111",
             intracomNumber: "ICN909"
         },
-        thumbnailSrc: "maranatha_thumbnail.jpg",
+        thumbnailSrc: "/Logos/maranatha_thumbnail.jpg",
         LiveSrc: "maranatha_live_stream_url"
     },
     {
         id: 13,
-        name: "meodh",
+        name: "radio vie meilleur",
         owner: {
             name: "Owner Name 13",
             adress: "Owner Address 13",
@@ -167,12 +167,12 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "000-111-2222",
             intracomNumber: "ICN010"
         },
-        thumbnailSrc: "meodh_thumbnail.jpg",
-        LiveSrc: "meodh_live_stream_url"
+        thumbnailSrc: "/Logos/radio_vie_meilleur_thumbnail.jpg",
+        LiveSrc: "radio_vie_meilleur_stream_url"
     },
     {
         id: 14,
-        name: "galaad",
+        name: "espérance FM",
         owner: {
             name: "Owner Name 14",
             adress: "Owner Address 14",
@@ -180,12 +180,12 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "111-222-3333",
             intracomNumber: "ICN111"
         },
-        thumbnailSrc: "galaad_thumbnail.jpg",
-        LiveSrc: "galaad_live_stream_url"
+        thumbnailSrc: "/Logos/espérance_FM_thumbnail.jpg",
+        LiveSrc: "espérance_FM_stream_url"
     },
     {
         id: 15,
-        name: "laurizon",
+        name: "Radio Joie de Vivre ",
         owner: {
             name: "Owner Name 15",
             adress: "Owner Address 15",
@@ -193,47 +193,8 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "222-333-4444",
             intracomNumber: "ICN222"
         },
-        thumbnailSrc: "laurizon_thumbnail.jpg",
-        LiveSrc: "laurizon_live_stream_url"
-    },
-    {
-        id: 16,
-        name: "gospel",
-        owner: {
-            name: "Owner Name 16",
-            adress: "Owner Address 16",
-            mail: "owner16@example.com",
-            phoneNumber: "333-444-5555",
-            intracomNumber: "ICN333"
-        },
-        thumbnailSrc: "gospel_thumbnail.jpg",
-        LiveSrc: "gospel_live_stream_url"
-    },
-    {
-        id: 17,
-        name: "kreol",
-        owner: {
-            name: "Owner Name 17",
-            adress: "Owner Address 17",
-            mail: "owner17@example.com",
-            phoneNumber: "444-555-6666",
-            intracomNumber: "ICN444"
-        },
-        thumbnailSrc: "kreol_thumbnail.jpg",
-        LiveSrc: "kreol_live_stream_url"
-    },
-    {
-        id: 18,
-        name: "pain de sucre",
-        owner: {
-            name: "Owner Name 18",
-            adress: "Owner Address 18",
-            mail: "owner18@example.com",
-            phoneNumber: "555-666-7777",
-            intracomNumber: "ICN555"
-        },
-        thumbnailSrc: "pain_de_sucre_thumbnail.jpg",
-        LiveSrc: "pain_de_sucre_live_stream_url"
+        thumbnailSrc: "/Logos/rjv_thumbnail.jpg",
+        LiveSrc: "rjv_stream_url"
     },
     // Add more channels with similar structures for the remaining names...
 ];

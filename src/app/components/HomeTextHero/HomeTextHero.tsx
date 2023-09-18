@@ -5,9 +5,10 @@ type Props = {
     reversed?: boolean
     imgSrc ?: string 
     text: string 
+    title: string
 }
 const lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sed laudantium. Deserunt laudantium saepe odit velit. Repudiandae aut, ut placeat consequatur quisquam veritatis odio vitae beatae, dolor assumenda, maiores sapiente?"
-const HomeTextHero = ({ reversed = false, imgSrc, text= lorem }: Props) => {
+const HomeTextHero = ({ reversed = false, imgSrc, text= lorem, title }: Props) => {
     return (
         <Flex
             w={"full"}
@@ -36,6 +37,7 @@ const HomeTextHero = ({ reversed = false, imgSrc, text= lorem }: Props) => {
                         width={"50%"}
                         h={"full"}
                     >
+                        {title && <Text fontSize={'3xl'} fontWeight={"bold"} marginTop={"15%"}>{title}</Text>}
                         <Text
                             marginTop={"16%"}
                             fontSize={"2xl"}

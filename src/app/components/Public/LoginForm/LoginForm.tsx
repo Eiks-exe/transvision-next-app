@@ -30,10 +30,10 @@ const LoginForm = ({ id }: Props) => {
             bg={useColorModeValue('gray.50', 'gray.800')}>
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
-                    <Heading fontSize={'4xl'}>Sign in to your account</Heading>
-                    <Text fontSize={'lg'} color={'gray.600'}>
+                    <Heading fontSize={'4xl'} textAlign={"center"}>Connecter vous à votre compte</Heading>
+                    {/* <Text fontSize={'lg'} color={'gray.600'}>
                         to enjoy all of our cool <Text color={'blue.400'}>features</Text> ✌️
-                    </Text>
+                    </Text> */}
                 </Stack>
                 <Box
                     rounded={'lg'}
@@ -54,18 +54,18 @@ const LoginForm = ({ id }: Props) => {
                                 direction={{ base: 'column', sm: 'row' }}
                                 align={'start'}
                                 justify={'space-between'}>
-                                <Checkbox>Remember me</Checkbox>
-                                <Text color={'blue.400'}>Forgot password?</Text>
+                                <Checkbox>Se souvenir de moir</Checkbox>
+                                <Text color={'blue.400'}>Mot de passe oublié?</Text>
                             </Stack>
                             <Button
                                 bg={'blue.400'}
-                                color={'white'}
+                                color={'black'}
                                 _hover={{
                                     bg: 'blue.500',
                                 }}
                                 onClick={() => { router.push(`/pages/Channel/${id}`) } }
                             >
-                                Sign in
+                                Se connecter
                             </Button>
                         </Stack>
                     </Stack>

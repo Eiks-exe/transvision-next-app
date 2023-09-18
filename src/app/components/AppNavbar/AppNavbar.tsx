@@ -25,9 +25,6 @@ const AppNavbar: React.FC<Props> = ({ title }) => {
           <li>
           <Link href="/pages/ChannelsHub">Chaines</Link>
           </li>
-          <li>
-            <a className="hover:text-gray-500" href="#">Pricing</a>
-          </li>
         </ul>
       </div>
       <div className="flex items-center gap-6">

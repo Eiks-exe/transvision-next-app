@@ -18,13 +18,13 @@ const AppHomeHero = (props: Props) => {
       w={'full'}
       justify={'center'}
       px={useBreakpointValue({ base: 4, md: 8 })}
-      bgGradient={'linear(to-r, blackAlpha.900, transparent)'}>
+      bgGradient={''}>
       <Stack maxW={'2xl'} align={'center'} spacing={6}>
       <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
-            color="white"
+            color=""
             textAlign={"center"}
       >
             Plate-Forme Numérique Transvision église <br />
@@ -39,16 +39,9 @@ const AppHomeHero = (props: Props) => {
           <Button
             bg={'blue.400'}
             rounded={'full'}
-            color={'white'}
+            color={'black'}
             _hover={{ bg: 'blue.500' }}>
-            Show me more
-          </Button>
-          <Button
-            bg={'whiteAlpha.300'}
-            rounded={'full'}
-            color={'white'}
-            _hover={{ bg: 'whiteAlpha.500' }}>
-            Show me more
+            Commencer
           </Button>
         </Stack>
       </Stack>

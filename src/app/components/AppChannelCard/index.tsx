@@ -19,7 +19,7 @@ const AppChannelCard = ({item, link}: Props) => {
       w={"332px"}
       h={"187px"}
       borderRadius={"xl"}
-      onClick={link ? ()=>{router.push(`/pages/Channel/${item.id}`)}: (e)=>{e.preventDefault()}}
+      onClick={link ? ()=>{router.push(`/pages/authentification/login/${item.id}`)}: (e)=>{e.preventDefault()}}
     >
      <Image 
           src={item.thumbnailSrc}

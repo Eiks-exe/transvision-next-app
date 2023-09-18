@@ -8,18 +8,22 @@ import {
 import React from 'react'
 
 type Props = {
-  src: string
+  Imgsrc: string
   ChannelName: string
 }
 
 channelsMock
 
-const StreamInfo = ({src, ChannelName}: Props) => {
+const StreamInfo = ({Imgsrc, ChannelName}: Props) => {
   
   return (
-    <HStack>
-      <Avatar src={src}/>
-      <Text>{ChannelName}</Text>
+    <HStack alignItems={"flex-start"}>
+      <Avatar src={Imgsrc}/>
+      <Text 
+        fontSize={'xl'} 
+        textAlign={"start"}
+        fontWeight={"bold"}
+      >{ChannelName}</Text>
     </HStack>
   )
 }

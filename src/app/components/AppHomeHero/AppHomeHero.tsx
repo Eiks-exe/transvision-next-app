@@ -20,7 +20,7 @@ const AppHomeHero = (props: Props) => {
       w={'full'}
       justify={'center'}
       px={useBreakpointValue({ base: 4, md: 8 })}
-      bgGradient={'linear(to-r, blackAlpha.900, transparent)'}>
+      bgGradient={''}>
       <Stack maxW={'2xl'} align={'center'} spacing={6}>
       <Heading
             fontWeight={600}

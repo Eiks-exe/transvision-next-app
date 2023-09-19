@@ -13,23 +13,25 @@ const AppHomeHero = (props: Props) => {
       'url()'
     }
     backgroundSize={'cover'}
-    backgroundPosition={'center center'}>
+    backgroundPosition={'center center'}
+    >
+
     <VStack
       w={'full'}
       justify={'center'}
       px={useBreakpointValue({ base: 4, md: 8 })}
-      bgGradient={''}>
+      bgGradient={'linear(to-r, blackAlpha.900, transparent)'}>
       <Stack maxW={'2xl'} align={'center'} spacing={6}>
       <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
-            color=""
+            color="white"
             textAlign={"center"}
       >
-            Plate-Forme Numérique Transvision église <br />
+            <Text as="span" color={"red.500"}>P</Text>late-<Text as="span" color={"red.500"}>F</Text>orme <Text as="span" color={"red.500"}>N</Text>umérique <Text as="span" color={"red.500"}>T</Text>ransvision <Text as="span" color={"red.500"}>E</Text>glises <br />
             <Text as={'span'} color={'red.500'} fontSize={"3xl"}>
-              Une offre dédié au streamin et à la VOD des église
+              Une offre dédié au streaming et à la VOD des églises
             </Text>
           </Heading>
         <Stack 
@@ -39,7 +41,7 @@ const AppHomeHero = (props: Props) => {
           <Button
             bg={'blue.400'}
             rounded={'full'}
-            color={'black'}
+            color={'white'}
             _hover={{ bg: 'blue.500' }}>
             Commencer
           </Button>

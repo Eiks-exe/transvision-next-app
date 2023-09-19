@@ -1,14 +1,23 @@
-import AppGrid from "@/app/components/AppGrid";
+"use client"
 import AppPlayer from "@/app/components/AppPlayer/AppPlayer";
 import WithSubnavigation, { DesktopNav } from "@/app/components/PlayerComponent/PlayerHNavBar/PlayerHNavBar";
 import StreamInfo from "@/app/components/PlayerComponent/StreamInfo/StreamInfo";
 import { IChannel } from "@/interfaces/channel";
 import { channelsMock } from "@/utils/channelsMock";
 import { Flex, HStack, VStack, Text } from "@chakra-ui/react";
+import { useEffect } from "react";
 
   export default function Page({ params }: { params: { id: number } }) {
     const currentChannel = channelsMock.find((channel: IChannel) => channel.id == params.id);
-    console.log(currentChannel?.id)
+    useEffect(() => {
+      const handleContextmenu = (e: Event) => {
+          e.preventDefault()
+      }
+      document.addEventListener('contextmenu', handleContextmenu)
+      return function cleanup() {
+          document.removeEventListener('contextmenu', handleContextmenu)
+      }
+}, [ ])
     return (
       <Flex
         width={"full"}

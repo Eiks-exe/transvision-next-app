@@ -20,7 +20,7 @@ const AppNavbar: React.FC<Props> = ({ title }) => {
             <a className="hover:text-gray-500" href="#">Acceuil</a>
           </li>
           <li>
-            <a className="hover:text-gray-500" href="#">Qui somme nous ?</a>
+            <a className="hover:text-gray-500" href="/pages/About">Qui somme nous ?</a>
           </li>
           <li>
           <Link href="/pages/ChannelsHub">Chaines</Link>

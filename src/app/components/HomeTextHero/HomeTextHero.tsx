@@ -4,11 +4,12 @@ import React from 'react'
 type Props = {
     reversed?: boolean
     imgSrc ?: string 
-    text: string 
+    text?: string 
     title?: string
+    padding?: string
 }
 const lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, sed laudantium. Deserunt laudantium saepe odit velit. Repudiandae aut, ut placeat consequatur quisquam veritatis odio vitae beatae, dolor assumenda, maiores sapiente?"
-const HomeTextHero = ({ reversed = false, imgSrc, text= lorem, title }: Props) => {
+const HomeTextHero = ({ reversed = false, imgSrc, text=lorem, title, padding}: Props) => {
     return (
         <Flex
             w={"full"}
@@ -42,6 +43,7 @@ const HomeTextHero = ({ reversed = false, imgSrc, text= lorem, title }: Props) =
                             marginTop={"16%"}
                             fontSize={"2xl"}
                             fontStyle={"italic"}
+                            padding={padding}
                         >
                             {text}
                         </Text>

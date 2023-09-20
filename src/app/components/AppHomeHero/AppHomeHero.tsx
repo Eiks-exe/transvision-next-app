@@ -26,7 +26,7 @@ const AppHomeHero = (props: Props) => {
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
-            color="white"
+            color=""
             textAlign={"center"}
       >
             <Text as="span" color={"red.500"}>P</Text>late-<Text as="span" color={"red.500"}>F</Text>orme <Text as="span" color={"red.500"}>N</Text>umérique <Text as="span" color={"red.500"}>T</Text>ransvision <Text as="span" color={"red.500"}>E</Text>glises <br />

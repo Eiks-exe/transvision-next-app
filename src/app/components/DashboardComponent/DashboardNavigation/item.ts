@@ -1,8 +1,9 @@
+
 const items = [
     {
       type: "link",
       label: "Dashboard",
-      // icon: MdOutlineSpaceDashboard,
+      icon: MdOutlineSpaceDashboard,
       path: "/pages/Dashboard",
     },
     {

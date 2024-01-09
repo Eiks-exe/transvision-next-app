@@ -19,7 +19,7 @@ const AppPlayer = (props: Props) => {
         width:"920",
         height:"480",
         sources: [{
-            src: 'https://3abn-live.akamaized.net/hls/live/2010546/French/master.m3u8',
+            src: 'https://6597f7864bef4.streamlock.net/liveorigin/labrousse/playlist.m3u8',
             type: 'application/x-mpegURL'
         }]
     };

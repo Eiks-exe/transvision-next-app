@@ -12,7 +12,7 @@ export const channelsMock: IChannel[] = [
             intracomNumber: "ICN123"
         },
         thumbnailSrc: "/Logos/boissard.jpg",
-        LiveSrc: ""
+        LiveSrc: "https://6597f7864bef4.streamlock.net/boissard/boissard/playlist.m3u8"
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const channelsMock: IChannel[] = [
             intracomNumber: "ICN456"
         },
         thumbnailSrc: "/Logos/mont_sinai_thumbnail.jpg",
-        LiveSrc: "mont_sinai_live_stream_url"
+        LiveSrc: "http://6597f7864bef4.streamlock.net/montsinai/montsinai/playlist.m3u8"
     },
     {
         id: 3,

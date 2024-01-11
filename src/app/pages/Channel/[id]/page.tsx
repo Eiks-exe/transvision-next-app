@@ -33,7 +33,8 @@ import { useEffect } from "react";
           p={20}
           spacing={10}
         >
-          <AppPlayer className='rounded-lg'/>
+          <AppPlayer className='rounded-lg' liveSrc={""}/>
+          {currentChannel?.LiveSrc ? currentChannel.LiveSrc : "hmm"}
           <StreamInfo Imgsrc={currentChannel?.thumbnailSrc? currentChannel?.thumbnailSrc : "..."} ChannelName={currentChannel?.name ? currentChannel?.name : "unknown"}/> 
         </VStack>
       </Flex>

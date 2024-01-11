@@ -7,7 +7,8 @@ import React from 'react'
 import Player from 'video.js/dist/types/player';
 
 type Props = {
-  className?: string 
+  className?: string
+  liveSrc: string
 }
 
 const AppPlayer = (props: Props) => {
@@ -19,7 +20,7 @@ const AppPlayer = (props: Props) => {
         width:"920",
         height:"480",
         sources: [{
-            src: 'https://6597f7864bef4.streamlock.net/liveorigin/labrousse/playlist.m3u8',
+            src: props.liveSrc,
             type: 'application/x-mpegURL'
         }]
     };

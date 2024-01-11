@@ -1,5 +1,6 @@
 "use client";
 
+import HomeImg from "@/ressources/HomeImg/HomeImg";
 import {
   Container,
   Stack,
@@ -41,7 +42,7 @@ export const AppHomeHero = () => {
                 position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: "red.400",
+                bg: "red.200",
                 zIndex: -1,
               }}
             >
@@ -108,7 +109,7 @@ export const AppHomeHero = () => {
           position={"relative"}
           w={"full"}
         >
-          <Blob
+          {/* <Blob
             w={"150%"}
             h={"150%"}
             position={"absolute"}
@@ -116,8 +117,16 @@ export const AppHomeHero = () => {
             left={0}
             zIndex={-1}
             color={useColorModeValue("red.50", "red.400")}
-          />
+          /> */}
           <Box
+            position={"relative"}
+            rounded={"2xl"}
+            width={"full"}
+            overflow={"hidden"}
+          >
+          <HomeImg />
+          </Box>
+         {/*  <Box
             position={"relative"}
             height={"300px"}
             rounded={"2xl"}
@@ -147,7 +156,7 @@ export const AppHomeHero = () => {
                 "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
               }
             />
-          </Box>
+          </Box> */}
         </Flex>
       </Stack>
     </Container>

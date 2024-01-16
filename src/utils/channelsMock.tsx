@@ -197,4 +197,30 @@ export const channelsMock: IChannel[] = [
         LiveSrc: "rjv_stream_url"
     },
     // Add more channels with similar structures for the remaining names...
+    {
+        id: 16,
+        name: "labrousse",
+        owner: {
+            name: "Owner Name 1",
+            adress: "Owner Address 1",
+            mail: "owne16r@example.com",
+            phoneNumber: "123-456-7890",
+            intracomNumber: "ICN123"
+        },
+        thumbnailSrc: "31k5_logo_eglise_labrousse_miniamlistic.png",
+        LiveSrc: "https://6597f7864bef4.streamlock.net/labrousse/labrousse/playlist.m3u8"
+    },
+    {
+        id: 17,
+        name: "mont sinai",
+        owner: {
+            name: "Owner Name 2",
+            adress: "Owner Address 2",
+            mail: "owner17@example.com",
+            phoneNumber: "987-654-3210",
+            intracomNumber:"ICN456"
+        },
+        thumbnailSrc: "31k5_logo_eglise_labrousse_miniamlistic.png",
+        LiveSrc: "https://6597f7864bef4.streamlock.net/montsinai/montsinai/playlist.m3u8"
+    }
 ];

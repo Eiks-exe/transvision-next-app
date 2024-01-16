@@ -8,7 +8,7 @@ type Props = {}
 const Page = (props: Props) => {
     return (
         <div className='mx-auto grid max-w-screen-xxl px-8 py-8 text-center lg:py-16'>
-            <AppGrid data={channelsMock}></AppGrid >
+            <AppGrid data={channelsMock.reverse()}></AppGrid >
         </div>
     )
 }

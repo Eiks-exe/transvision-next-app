@@ -21,7 +21,6 @@ const AppPlayer = (props: Props) => {
         height:"480",
         sources: [{
             src: props.liveSrc,
-            type: 'application/x-mpegURL'
         }]
     };
 
@@ -37,7 +36,7 @@ const AppPlayer = (props: Props) => {
               player.dispose();
             }
           };
-      }, []);
+      }, [videoRef]);
 
     return (
         <div data-vjs-player>

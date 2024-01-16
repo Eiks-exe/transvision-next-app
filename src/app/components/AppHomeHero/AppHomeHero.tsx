@@ -9,12 +9,9 @@ import {
   Heading,
   Text,
   Button,
-  Image,
   Icon,
-  IconButton,
   createIcon,
-  IconProps,
-  useColorModeValue,
+  IconProps
 } from "@chakra-ui/react";
 
 export const AppHomeHero = () => {

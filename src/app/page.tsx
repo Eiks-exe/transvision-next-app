@@ -1,20 +1,16 @@
 import Image from 'next/image'
 import {
-  Box,
-  Button,
   Flex,
-  HStack,
-  Stack,
   Text,
   VStack,
-  useBreakpointValue
+  
 } from '@chakra-ui/react'
 import AppNavbar from './components/AppNavbar/AppNavbar'
 import AppHomeHero from './components/AppHomeHero/AppHomeHero'
 import HomeTextHero from './components/HomeTextHero/HomeTextHero'
 import AppGrid from './components/AppGrid'
 import { channelsMock } from '@/utils/channelsMock'
-import flat from '../ressources/31k5_Flat_2D.png'
+
 
 
 const text1 = "PFNTE offre une solution de diffusion en direct pour les églises et ses partenaires qui partage l'orientation et l'éthique religieuse selon les écritures bibliques.";

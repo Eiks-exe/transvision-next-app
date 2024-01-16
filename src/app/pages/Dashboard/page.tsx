@@ -1,9 +1,7 @@
 'use client'
 
 import React from 'react'
-import DashboardSideBar from '@/app/components/DashboardComponent/DashboardSideBar/DashboardSideBar'
-import { HStack, Flex, IconButton, Text } from '@chakra-ui/react'
-import AppLayout from '@/app/components/AppLayout/AppLayout'
+import { Text } from '@chakra-ui/react'
 import DashboardLayout from '@/app/components/DashboardComponent/DashboardLayout/DashboardLayout'
 
 type Props = {}

@@ -1,7 +1,5 @@
-import AppChannelCard from '@/app/components/AppChannelCard'
 import React from 'react'
 import AppGrid from '@/app/components/AppGrid/'
-import AppPlayer from '@/app/components/AppPlayer/AppPlayer'
 import { channelsMock } from '@/utils/channelsMock'
 type Props = {}
 

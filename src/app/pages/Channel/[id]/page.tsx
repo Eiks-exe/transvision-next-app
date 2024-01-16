@@ -1,10 +1,10 @@
 "use client"
 import AppPlayer from "@/app/components/AppPlayer/AppPlayer";
-import WithSubnavigation, { DesktopNav } from "@/app/components/PlayerComponent/PlayerHNavBar/PlayerHNavBar";
+import WithSubnavigation from "@/app/components/PlayerComponent/PlayerHNavBar/PlayerHNavBar";
 import StreamInfo from "@/app/components/PlayerComponent/StreamInfo/StreamInfo";
 import { IChannel } from "@/interfaces/channel";
 import { channelsMock } from "@/utils/channelsMock";
-import { Flex, HStack, VStack, Text } from "@chakra-ui/react";
+import { Flex, VStack } from "@chakra-ui/react";
 import { useEffect } from "react";
 
   export default function Page({ params }: { params: { id: number } }) {
@@ -41,8 +41,3 @@ import { useEffect } from "react";
     )
   }
 
-/*   <div className='mx-auto grid max-w-screen-xxl px-[10%] py-8 text-center lg:py-16 h-screen'>
-           <AppPlayer className='rounded-lg'/>
-           
-           {params.id}
-        </div> */

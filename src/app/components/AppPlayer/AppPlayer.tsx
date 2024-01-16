@@ -1,7 +1,6 @@
 'use client'
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
-import 'videojs-contrib-hls'
 
 import React from 'react'
 import Player from 'video.js/dist/types/player';

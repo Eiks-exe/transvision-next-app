@@ -12,7 +12,7 @@ export const channelsMock: IChannel[] = [
             intracomNumber: "ICN123"
         },
         thumbnailSrc: "/Logos/boissard.jpg",
-        LiveSrc: "https://6597f7864bef4.streamlock.net/boissard/boissard/playlist.m3u8"
+        LiveSrc: "https://6597f7864bef4.streamlock.net/liveorigin/Eglise-Boissard/playlist.m3u8"
     },
     {
         id: 2,
@@ -207,7 +207,7 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "123-456-7890",
             intracomNumber: "ICN123"
         },
-        thumbnailSrc: "31k5_logo_eglise_labrousse_miniamlistic.png",
+        thumbnailSrc: "/31k5_logo_eglise_labrousse_miniamlistic.png",
         LiveSrc: "https://6597f7864bef4.streamlock.net/Labrousse/Labrousse/playlist.m3u8"
     },
     {
@@ -220,7 +220,7 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "987-654-3210",
             intracomNumber:"ICN456"
         },
-        thumbnailSrc: "31k5_logo_eglise_labrousse_miniamlistic.png",
+        thumbnailSrc: "/31k5_logo_eglise_labrousse_miniamlistic.png",
         LiveSrc: "https://6597f7864bef4.streamlock.net/montsinai/montsinai/playlist.m3u8"
     }
 ];

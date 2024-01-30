@@ -26,10 +26,6 @@ const page = (props: Props) => {
             >
             <HomeTextHero title='' text={about} padding='5%' imgSrc='https://images.unsplash.com/photo-1521790945508-bf2a36314e85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1934&q=80'/>
             </Box>
-            <Heading mt={"10"}>Connection</Heading>
-            <HomeTextHero imgSrc='/pres1.png' reversed text='' />
-            <Heading mt={"10"}>Pannel admin</Heading>
-            <HomeTextHero imgSrc='/pres1.png'  text='' />
             </VStack>
         </Flex>
         </AppLayout>

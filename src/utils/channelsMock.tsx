@@ -207,7 +207,7 @@ export const channelsMock: IChannel[] = [
             phoneNumber: "123-456-7890",
             intracomNumber: "ICN123"
         },
-        thumbnailSrc: "/31k5_logo_eglise_labrousse_miniamlistic.png",
+        thumbnailSrc: "/labrousse_thumbnail.png",
         LiveSrc: "https://6597f7864bef4.streamlock.net/Labrousse/Labrousse/playlist.m3u8"
     },
     {

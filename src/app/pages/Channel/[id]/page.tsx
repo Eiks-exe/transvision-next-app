@@ -12,20 +12,35 @@ import HslPlayer from "@/app/components/HslPlayer/HslPlayer";
 export default function Page({ params }: { params: { id: number } }) {
   const currentChannel = channelsMock.find((channel: IChannel) => channel.id == params.id);
   useEffect(() => {
+
     const video = document.getElementById('video') as HTMLVideoElement
+
     const hls = new HSL()
-    hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8')
+
+    hls.loadSource(currentChannel?.LiveSrc ? currentChannel.LiveSrc : "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u")
+
     hls.attachMedia(video)
+
     hls.on(HSL.Events.MANIFEST_PARSED, function () {
+
       video.play()
+
     })
+
     const handleContextmenu = (e: Event) => {
+
       e.preventDefault()
+
     }
+
     document.addEventListener('contextmenu', handleContextmenu)
+
     return function cleanup() {
+
       document.removeEventListener('contextmenu', handleContextmenu)
+
     }
+
   }, [])
   return (
     <Flex

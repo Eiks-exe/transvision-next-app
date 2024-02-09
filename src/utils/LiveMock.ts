@@ -6,7 +6,7 @@ interface ChannelInterface {
 
 }
 
-const liveMock = [
+export const liveMock = [
     {
         id : "1",
         name : "rvm",
@@ -227,6 +227,6 @@ const liveMock = [
         type: "live",
         source : "http://148.72.170.92:1935/rvmlive/myStream/playlist.m3u8"
     },
-    
+
 
 ]

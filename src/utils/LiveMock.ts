@@ -177,15 +177,56 @@ const liveMock = [
     },
     {
         id : "29",
-        name : "saintvincent",
+        name : "gospelkreol",
         type: "live",
-        source : "http://stream2.transvision.fr:1935/saintvincent/saintvincent/playlist.m3u8"
+        source : "http://stream2.transvision.fr:1935/gospelkreol/gospelkreol/playlist.m3u8"
     },
     {
         id : "30",
-        name : "saintkitts",
+        name : "meodh",
         type: "live",
-        source : "http://stream2.transvision.fr:1935/saintkitts/saintkitts/playlist.m3u8"
+        source : "http://stream2.transvision.fr:1935/meodh/meodh/playlist.m3u8"
     },
+    {
+        id : "31",
+        name : "hope media haiti",
+        type: "live",
+        source: "http://stream2.transvision.fr:1935/hopemediahaiti/hopemediahaiti/playlist.m3u8"
+    },
+    {
+        id : "32",
+        name : "vert pre",
+        type: "live",
+        source : "http://stream2.transvision.fr:1935/vertpre/vertpre/playlist.m3u8",
+    },
+    // http://stream2.transvision.fr:1935/maranathaacajou/maranathaacajou/playlist.m3u8
+    {
+        id : "33",
+        name : "maranatha acacou",
+        type: "live",
+        source : "http://stream2.transvision.fr:1935/maranathaacajou/maranathaacajou/playlist.m3u8",
+    },
+    // http://stream2.transvision.fr:1935/rouselle/rouselle/playlist.m3u8
+    {
+        id : "34",
+        name : "rouselle",
+        type: "live",
+        source : "http://stream2.transvision.fr:1935/rouselle/rouselle/playlist.m3u8",
+    },
+    // http://stream2.transvision.fr:1935/laurizon/laurizon/playlist.m3u8
+    {
+        id : "35",
+        name : "laurizon",
+        type: "live",
+        source : "http://stream2.transvision.fr:1935/laurizon/laurizon/playlist.m3u8",
+    },
+    // http://148.72.170.92:1935/rvmlive/myStream/playlist.m3u8
+    {
+        id : "36",
+        name : "rvm",
+        type: "live",
+        source : "http://148.72.170.92:1935/rvmlive/myStream/playlist.m3u8"
+    },
+    
 
 ]

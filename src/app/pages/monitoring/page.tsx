@@ -35,6 +35,9 @@ const LiveGrid: React.FC<LiveGridProps> = ({channels}) => {
                                 muted={true}
                             />  
                         </div>
+                        <div className='font-bold'>
+                        {channel.name}
+                        </div>
                 </Link>
         
             ))}

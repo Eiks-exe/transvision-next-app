@@ -28,7 +28,12 @@ const LiveGrid: React.FC<LiveGridProps> = ({channels}) => {
             {channels.map((channel: any) => (
                 <Link href={`/#`} key={channel.id}>
                         <div className='h-52 flex justify-center items-center rounded-xl text-white font-bold bg-black' key={channel.id} style={{width: "22rem"}}>
-                            <HslPlayer id={channel.id} liveSrc={channel.source} style={{width:"352px", height: "208px"}}/>  
+                            <HslPlayer 
+                                id={channel.id} 
+                                liveSrc={channel.source} 
+                                style={{width:"352px", height: "208px"}}
+                                muted={true}
+                            />  
                         </div>
                             {channel.name + " video-" + channel.id}
 

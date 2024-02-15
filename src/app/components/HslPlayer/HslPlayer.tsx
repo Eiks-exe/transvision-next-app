@@ -9,6 +9,7 @@ interface Props {
     muted?: boolean;     
 }
 
+
 const HslPlayer = ({ id, liveSrc, className, style, muted = false} : Props) => {
     React.useEffect(() => {
         const video = document.getElementById('video') as HTMLVideoElement
@@ -27,6 +28,8 @@ const HslPlayer = ({ id, liveSrc, className, style, muted = false} : Props) => {
             className={`rounded-xl ${className}`} 
             style={style}
             muted={muted}
+            controls
+            autoPlay
         >
         </video>
     </div>

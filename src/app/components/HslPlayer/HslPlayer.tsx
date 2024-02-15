@@ -2,10 +2,13 @@ import React from 'react'
 import HSL from 'hls.js'
 
 interface Props {
-    liveSrc: string;        
+    id?: string;
+    liveSrc: string;
+    className?: string;  
+    style?: React.CSSProperties;     
 }
 
-const HslPlayer = ({ liveSrc } : Props) => {
+const HslPlayer = ({ id, liveSrc, className, style} : Props) => {
     React.useEffect(() => {
         const video = document.getElementById('video') as HTMLVideoElement
         const hls = new HSL()
@@ -17,7 +20,7 @@ const HslPlayer = ({ liveSrc } : Props) => {
     }, [])
   return (
     <div>
-        <video id="video" src="">
+        <video id={`video-${id}`} src="" className={`rounded-xl ${className}`} style={style}>
         </video>
     </div>
   )

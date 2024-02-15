@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
-import AppGrid from '@/app/components/AppGrid/'
-import { channelsMock } from '@/utils/channelsMock'
 import { liveMock } from '@/utils/LiveMock'
-import { CheckboxGroup } from '@chakra-ui/react'
+import Link from 'next/link'
+import HslPlayer from '@/app/components/HslPlayer/HslPlayer';
+import { $ } from 'video.js/dist/types/utils/dom';
+import Hls from 'hls.js';
 type Props = {}
 
 interface LiveGridProps {
@@ -10,12 +12,28 @@ interface LiveGridProps {
 }
 
 const LiveGrid: React.FC<LiveGridProps> = ({channels}) => {
+    React.useEffect(() => {
+        liveMock.forEach((channel: any) => {
+            const video = document.getElementById('video-' + channel.id ) as HTMLVideoElement
+            const hls = new Hls()
+            hls.loadSource(channel.source)
+            hls.attachMedia(video)
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                video.play()
+            })
+        })
+    }, [])
     return (
         <div className='grid grid-cols-4 gap-4'>
             {channels.map((channel: any) => (
-                <div className='h-52 flex justify-center items-center rounded-xl text-white font-bold bg-gray-800' key={channel.id} style={{width: "22rem"}}>
-                    {channel.name}
-                </div>
+                <Link href={`/#`} key={channel.id}>
+                        <div className='h-52 flex justify-center items-center rounded-xl text-white font-bold bg-black' key={channel.id} style={{width: "22rem"}}>
+                            <HslPlayer id={channel.id} liveSrc={channel.source} style={{width:"352px", height: "208px"}}/>  
+                        </div>
+                            {channel.name + " video-" + channel.id}
+
+                </Link>
+        
             ))}
         </div>
     )

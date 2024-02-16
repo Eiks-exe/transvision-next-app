@@ -22,6 +22,19 @@ const LiveGrid: React.FC<LiveGridProps> = ({channels}) => {
                 video.play()
             })
         })
+        const handleContextmenu = (e: Event) => {
+
+            e.preventDefault()
+      
+          }
+      
+          document.addEventListener('contextmenu', handleContextmenu)
+      
+          return function cleanup() {
+      
+            document.removeEventListener('contextmenu', handleContextmenu)
+      
+          }
     }, [])
     return (
         <div className='grid grid-cols-4 gap-4'>

@@ -37,7 +37,7 @@ const LiveGrid: React.FC<LiveGridProps> = ({channels}) => {
           }
     }, [])
     return (
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid gap-3 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4'>
             {channels.map((channel: any) => (
                 <Link href={`/#`} key={channel.id}>
                         <div className='h-52 flex justify-center items-center rounded-xl text-white font-bold bg-black' key={channel.id} style={{width: "22rem"}}>

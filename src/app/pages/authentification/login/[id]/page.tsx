@@ -6,7 +6,6 @@ import { Flex, HStack, VStack, Text } from "@chakra-ui/react";
 
   export default function Page({ params }: { params: { id: number } }) {
     const currentChannel = channelsMock.find((channel: IChannel) => channel.id == params.id);
-    console.log(currentChannel?.id)
     return (
       <Flex
         width={"full"}

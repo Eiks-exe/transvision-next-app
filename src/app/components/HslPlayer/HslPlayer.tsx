@@ -17,7 +17,7 @@ const HslPlayer = ({ id, liveSrc, className, style, muted = false} : Props) => {
         hls.loadSource(liveSrc)
         hls.attachMedia(video)
         hls.on(HSL.Events.MANIFEST_PARSED, function () {
-            video.play()
+            //video.play()
         })
     }, [])
   return (
@@ -29,7 +29,6 @@ const HslPlayer = ({ id, liveSrc, className, style, muted = false} : Props) => {
             style={style}
             muted={muted}
             controls
-            autoPlay
         >
         </video>
     </div>

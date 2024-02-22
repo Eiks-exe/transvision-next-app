@@ -23,7 +23,7 @@ const AppNavbar: React.FC<Props> = ({ title }) => {
             <a className="hover:text-gray-500" href="/pages/About">Qui somme nous ?</a>
           </li>
           <li>
-          <Link href="/pages/ChannelsHub">Chaines</Link>
+          <Link href="/pages/Channel">Chaines</Link>
           </li>
         </ul>
       </div>
